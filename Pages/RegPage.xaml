@@ -1,0 +1,48 @@
+﻿<Page x:Class="TourCompany.Pages.RegPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TourCompany.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RegPage">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="250">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="3*"/>
+                </Grid.RowDefinitions>
+            </Grid>
+            <Border Background="Orange" CornerRadius="5,5,0,0" BorderThickness="0,0,0,0" Margin="0">
+                <StackPanel Grid.Row="0" Margin="0">
+                    <TextBlock Text="Форма регистрации"/>
+                </StackPanel>
+            </Border>
+            <Border Background="Gray" CornerRadius="0,0,5,5" BorderThickness="0,0,0,0" Margin="0">
+                <StackPanel Grid.Row="1">
+                    <TextBlock Text="Введите логин:"/>
+                    <TextBox Margin="2" Name="TxbLog"/>
+                    <TextBlock Text="Введите пароль:"/>
+                    <PasswordBox Margin="2" Name="PsbBox"/>
+                    <TextBlock Text="Повторите пароль:"/>
+                    <PasswordBox Margin="2" Name="PsbCopyBox"/>
+                    <Button 
+                        Background="Red"
+                        Click="BtnReg_Click"
+                        Name="BtnReg"
+                        Margin="2"
+                        Content="Регистрация"/>
+                    <Button
+                        Background="Red"
+                        Click="BtnBAck_Click"
+                        Name="BtnBAck"
+                        Margin="2"
+                        Content="Назад"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Page>
